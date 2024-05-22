@@ -42,7 +42,6 @@ This repository contains a Dockerized FastAPI service and a worker service. The 
 
 - Docker installed on your machine.
 - Docker Compose installed on your machine.
-- Local Postgresql DB is running and configured
 
 ### Steps to Run
 

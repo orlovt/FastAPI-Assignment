@@ -9,7 +9,6 @@ This repository contains a complete setup for deploying a FastAPI service and a 
 ├── README.md
 ├── app.py
 ├── cdk.json
-├── ...
 ├── fast_api
 │   ├── __init__.py
 │   ├── lambda_function.py
@@ -91,13 +90,6 @@ After deployment, the SQS URL and Lambda function details will be printed in the
 
 You can use the `send_req.py` script to send requests to the deployed FastAPI service.
 
-### Running Tests
-
-To run the tests, navigate to the project directory and run:
-
-```bash
-pytest
-```
 
 ### Cleaning Up
 
