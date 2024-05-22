@@ -38,3 +38,7 @@ egg-info/
 *.tmp
 *.tmp.*
 *~
+
+
+.pytest_cache/
+.DS_Store
