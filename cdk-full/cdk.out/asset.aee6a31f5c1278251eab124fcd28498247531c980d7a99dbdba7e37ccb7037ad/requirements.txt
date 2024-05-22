@@ -1,0 +1,5 @@
+uvicorn
+sqlalchemy
+asyncpg
+boto3
+python-dotenv
