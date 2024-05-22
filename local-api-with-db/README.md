@@ -1,6 +1,6 @@
-# Implementation 1. 
+#  Local FastAPI
 
-This project is a simple logging service built using FastAPI, which logs messages to a PostgreSQL database asynchronously.
+This is a fully local implementation of **FastAPI**
 
 ## Project Structure
 
