@@ -1,58 +1,69 @@
+# CDK SQS
 
-# Welcome to your CDK Python project!
+This repository is used to create an AWS SQS (Simple Queue Service) utilizing AWS CDK (Cloud Development Kit).
 
-This is a blank project for CDK development with Python.
+## Prerequisites
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+- [AWS CLI](https://aws.amazon.com/cli/) configured with your AWS account.
+- [AWS CDK](https://aws.amazon.com/cdk/) installed.
+- Python 3.x installed.
 
-This project is set up like a standard Python project.  The initialization
-process also creates a virtualenv within this project, stored under the `.venv`
-directory.  To create the virtualenv it assumes that there is a `python3`
-(or `python` for Windows) executable in your path with access to the `venv`
-package. If for any reason the automatic creation of the virtualenv fails,
-you can create the virtualenv manually.
+### Setup
 
-To manually create a virtualenv on MacOS and Linux:
+1. **Navigate to the project directory:**
 
+   ```bash
+   cd path/to/cdk-SQS-deployment
+   ```
+
+2. **Create a virtual environment:**
+
+   ```bash
+   python3 -m venv .venv
+   ```
+
+3. **Activate the virtual environment:**
+
+   ```bash
+   source .venv/bin/activate
+   ```
+
+4. **Install the required dependencies:**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. **Synthesize the CloudFormation template:**
+
+   ```bash
+   cdk synth
+   ```
+
+6. **Deploy the stack:**
+
+   ```bash
+   cdk deploy
+   ```
+
+### Post Deployment
+
+Once AWS SQS is deployed, the SQS URL will be printed in the console. You can also access it via the AWS Management Console.
+
+### Deleting the Stack
+
+To delete the stack, use the following commands:
+
+```bash
+cdk ls # to see the list of stacks
+cdk destroy StackName # to destroy the stack
 ```
-$ python3 -m venv .venv
-```
 
-After the init process completes and the virtualenv is created, you can use the following
-step to activate your virtualenv.
+## Useful Commands
 
-```
-$ source .venv/bin/activate
-```
+- `cdk ls`          - List all stacks in the app.
+- `cdk synth`       - Emit the synthesized CloudFormation template.
+- `cdk deploy`      - Deploy this stack to your default AWS account/region.
+- `cdk diff`        - Compare the deployed stack with the current state.
+- `cdk docs`        - Open CDK documentation.
 
-If you are a Windows platform, you would activate the virtualenv like this:
-
-```
-% .venv\Scripts\activate.bat
-```
-
-Once the virtualenv is activated, you can install the required dependencies.
-
-```
-$ pip install -r requirements.txt
-```
-
-At this point you can now synthesize the CloudFormation template for this code.
-
-```
-$ cdk synth
-```
-
-To add additional dependencies, for example other CDK libraries, just add
-them to your `setup.py` file and rerun the `pip install -r requirements.txt`
-command.
-
-## Useful commands
-
- * `cdk ls`          list all stacks in the app
- * `cdk synth`       emits the synthesized CloudFormation template
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk docs`        open CDK documentation
-
-Enjoy!

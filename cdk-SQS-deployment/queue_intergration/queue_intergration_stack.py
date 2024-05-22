@@ -6,6 +6,9 @@ from aws_cdk import (
 )
 
 class QueueIntergrationStack(Stack):
+    """
+    A class representing a stack for integrating with an SQS queue.
+    """
 
     def __init__(self, scope: Construct, id: str, **kwargs) -> None:
         super().__init__(scope, id, **kwargs)
