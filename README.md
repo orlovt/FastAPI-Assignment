@@ -22,7 +22,7 @@ Contains a **cdk script** to deploy an **aws sqs** queue.
 
 ### docker-api-and-worker
 
-Cointains a docker-compose which runs **fast-api, worker, postgres db**
+Cointains a docker-compose which runs **fast-api, worker, postgres db** and an **sqs queue**
 
 ### cdk-full
 
